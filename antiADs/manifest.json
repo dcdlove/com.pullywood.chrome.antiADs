@@ -1,0 +1,90 @@
+{
+	"manifest_version": 2,
+	"name": "优酷去广告 插件(已支持优酷、土豆、爱奇艺、乐视网、搜狐视频、酷六)",
+	"description": "一款Chrome浏览器中用以屏蔽国内部分视频网站视频广告的工具，扩展的主要功能是去除视频播放前强奸用户体验的几十秒广告及黑屏，目前已经支持广告屏蔽的视频网站包括优酷、土豆、爱奇艺、乐视网、搜狐视频、酷六等。",
+	"version": "1.1.1",
+	"browser_action": {
+		"default_icon": "images/icon.png",
+		"default_popup": "pages/popup.html"
+	},
+	"options_page": "pages/options.html",
+	"icons": {
+	  "32": "images/icon32.png",
+	  "48": "images/icon48.png",
+	  "128": "images/icon128.png"
+	},
+	"web_accessible_resources": [
+		"scripts/background.js", 
+		"scripts/jquery-1.10.2.min.map", 
+		"scripts/jquery.js", 
+		"scripts/script.js", 
+		"flashes/youku/loader.swf", 
+		"flashes/youku/loaders.swf", 
+		"flashes/youku/player.swf", 
+		"flashes/youku/player_touch.swf", 
+		"flashes/youku/player_yk.swf", 
+		"flashes/youku/player_yknpsv.swf", 
+		"flashes/iqiyi/Player.swf", 
+		"flashes/iqiyi/pps_Player.swf", 
+		"flashes/iqiyi/pps_flvplay_s.swf", 
+		"flashes/iqiyi/bilibili_iqiyi.swf", 
+		"flashes/iqiyi/bilibili_Player.swf", 
+		"flashes/letv/pccs.xml", 
+		"flashes/letv/pccs_.xml", 
+		"flashes/letv/swfPlayer.swf", 
+		"flashes/letv/LetvPlayer.swf", 
+		"flashes/letv/SSDKLetvPlayer.swf", 
+		"flashes/letv/SLetvPlayer.swf", 
+		"flashes/letv/KLetvPlayer.swf", 
+		"flashes/letv/ALetvPlayer.swf", 
+		"flashes/letv/FPLetvPlayer.swf", 
+		"flashes/sohu/Main.swf",
+		"flashes/sohu/PlayerShell.swf",
+		"flashes/sohu/CloudaccVinfo.swf", 
+		"flashes/sohu/TvSohuLoading.swf", 
+		"flashes/sohu/skins/s1.swf", 
+		"flashes/sohu/panel/PlayList.swf", 
+		"flashes/sohu/panel/SettingPanel.swf", 
+		"flashes/sohu/panel/ErrorRecommend.swf", 
+		"flashes/sohu/other/time.swf", 
+		"flashes/sohu/otherCore/PLVideoCore.swf", 
+		"flashes/ku6/player.swf", 
+		"flashes/ku6/loader.swf", 
+		"flashes/ku6/v.swf", 
+		"images/icon.png", 
+		"images/icon128.png", 
+		"images/icon128_error.png", 
+		"images/icon128_warning.png", 
+		"images/icon32.png", 
+		"images/icon32_error.png", 
+		"images/icon32_warning.png", 
+		"images/icon48.png", 
+		"images/icon48_error.png", 
+		"images/icon48_warning.png", 
+		"images/icon_error.png", 
+		"images/icon_warning.png"
+	], 
+	
+	"permissions": [
+	  "tabs", 
+	  "proxy", 
+		"webRequest", 
+		"webRequestBlocking", 
+		"browsingData",
+		"*://*/*",
+	  "unlimitedStorage"
+	],
+	"background": {
+	  "scripts": ["scripts/background.js"]
+	},
+	"content_scripts": [{ 
+			"all_frames": true,
+			"run_at": "document_start",
+	  	"js": [
+				"scripts/jquery.js", 
+				"scripts/script.js"
+			], "matches": [ 
+				"*://*/*"
+			]
+	}]
+}

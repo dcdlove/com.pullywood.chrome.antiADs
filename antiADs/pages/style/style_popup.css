@@ -1,0 +1,150 @@
+#main {
+	overflow:hidden;
+	text-align:center;
+	width:330px;
+}
+
+.popMenuItem {
+	display:block;
+	float:left;
+}
+
+#youku_{
+	width:280px;
+	height:80px;
+	overflow:hidden;
+	background: #fff url('../images/logo0.png') no-repeat 0px 0px;
+}
+#youku_:hover {
+	background: #fff url('../images/logo1.png') no-repeat 0px 0px;
+}
+#tudou_{
+	width:280px;
+	height:80px;
+	overflow:hidden;
+	background: #fff url('../images/logo0.png') no-repeat 0px -80px;
+}
+#tudou_:hover {
+	background: #fff url('../images/logo1.png') no-repeat 0px -80px;
+}
+#iqiyi_{
+	width:280px;
+	height:80px;
+	overflow:hidden;
+	background: #fff url('../images/logo0.png') no-repeat 0px -160px;
+}
+#iqiyi_:hover {
+	background: #fff url('../images/logo1.png') no-repeat 0px -160px;
+}
+#letv_{
+	width:280px;
+	height:80px;
+	overflow:hidden;
+	background: #fff url('../images/logo0.png') no-repeat 0px -240px;
+}
+#letv_:hover {
+	background: #fff url('../images/logo1.png') no-repeat 0px -240px;
+}
+#sohu_{
+	width:280px;
+	height:80px;
+	overflow:hidden;
+	background: #fff url('../images/logo0.png') no-repeat 0px -320px;
+}
+#sohu_:hover {
+	background: #fff url('../images/logo1.png') no-repeat 0px -320px;
+}
+#ku6_{
+	width:280px;
+	height:80px;
+	overflow:hidden;
+	background: #fff url('../images/logo0.png') no-repeat 0px -400px;
+}
+#ku6_:hover {
+	background: #fff url('../images/logo1.png') no-repeat 0px -400px;
+}
+#pullywood_{
+	width:280px;
+	height:80px;
+	overflow:hidden;
+	background: #fff url('../images/logo0.png') no-repeat 0px -480px;
+}
+#pullywood_:hover {
+	background: #fff url('../images/logo1.png') no-repeat 0px -480px;
+}
+#main ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+
+.switchBtn{
+	display:block;
+	width:49px;
+	height:80px;
+	border-left:1px solid #ffffff;
+	float:right;
+}
+.button_sw_0 {
+	background-image:url('../images/check_0.png');
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.menuLi:hover .button_sw_0{
+	background-image:url('../images/check_0_r.png');
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.button_sw_1 {
+	background-image:url('../images/check_1.png');
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.menuLi:hover .button_sw_1{
+	background-image:url('../images/check_1_r.png');
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+#youku_sw {
+	background-color:#2a3efd;
+}
+.menuLi:hover #youku_sw {
+	border-left:1px solid #2a3efd;
+}
+#tudou_sw {
+	background-color:#d8502a;
+}
+.menuLi:hover #tudou_sw {
+	border-left:1px solid #d8502a;
+}
+#iqiyi_sw {
+	background-color:#66af1d;
+}
+.menuLi:hover #iqiyi_sw {
+	border-left:1px solid #66af1d;
+}
+#letv_sw {
+	background-color:#000000;
+}
+.menuLi:hover #letv_sw {
+	border-left:1px solid #000000;
+}
+#sohu_sw {
+	background-color:#d00006;
+}
+.menuLi:hover #sohu_sw {
+	border-left:1px solid #d00006;
+}
+#ku6_sw {
+	background-color:#9cc715;
+}
+.menuLi:hover #ku6_sw {
+	border-left:1px solid #9cc715;
+}
+#pullywood_sw {
+	background-color:#97009e;
+}
+.menuLi:hover #pullywood_sw {
+	border-left:1px solid #97009e;
+}

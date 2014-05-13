@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- Site: http://www.pullywood.com/ -->
+<!-- Coded By 睡虫子(Joey) -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>扩展选项</title>
+<link type="text/css" href="../jquery-ui/themes/jquery-ui.min.css" rel="stylesheet" />
+<link type="text/css" href="../jquery-ui/themes/start/jquery-ui.custom.min.css" rel="stylesheet" />
+<script type="text/javascript" src="../scripts/jquery.js"></script>
+<script type="text/javascript" src="../jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../jquery-ui/i18n/jquery-ui-i18n.min.js"></script>
+<script type="text/javascript" src="./scripts/operation.js"></script>
+<link type="text/css" rel="stylesheet" href="./style/style.css"/>
+</head>
+<body>
+	<h1><img src="./images/icon48.png" title="LOGO 普利坞视频网站去广告扩展(Pullywood)" /> 扩展选项 普利坞视频网站去广告扩展(Pullywood)</h1>
+	<div id="tabs" class="ui-tab">
+	  <ul>
+	    <li><a href="#tabs-0">参数配置</a></li>
+	    <li><a href="#tabs-1">关于扩展</a></li>
+	  </ul>
+	  <div id="tabs-0">
+			<p><img src="../images/icon128.png" /></p>
+			
+	    <div id="configure">
+			  <h3>缓存清理模式：</h3>
+			  <div>
+			  	<p>
+			  		<h3>缓存清理模式：</h3>
+			  		<label><input type="radio" name="cacheMode" class="cacheMode" value="auto" />扩展启动时自动清理</label><br />
+			  		<label><input type="radio" name="cacheMode" class="cacheMode" value="manual" />出现问题时手动清理</label>
+			  	</p>
+			  	<p>有时优酷页面播放可能会出现 错误代码：2003 的现象，有时与switchysharp的配置明明是正确的，但扩展的图标上仍出现 issu 字样，这些问题有很大可能是由于缓存问导致的(根据过往经验，优酷官网去广告很少出问题)。</p>
+			  	<p>每次扩展启动或代理模式变动时自动清理缓存能较好的解决这个问题，但对于经常玩需大量加载网络文件的在线flash游戏的网友而言，自动清理缓存意味着每次开启浏览器后都要重新加载才能进行游戏，不过现在你有得选了。</p>
+			  </div>
+			  <h3>代理控制模式：</h3>
+			  <div>
+			  	<p>
+			  		<h3>代理控制模式：</h3>
+			  		<label><input type="radio" name="proxyMode" class="proxyMode" value="control" />代理控制权独占，代理扩展和本扩展只有一个能正常工作。</label><br />
+			  		<label><input type="radio" name="proxyMode" class="proxyMode" value="release" />科学上网，由代理扩展控制浏览器的代理设置。(注：使用<a href="https://chrome.google.com/webstore/detail/dpplabbmogkhghncfbfdeeokoefdjegm" title="链接至chrome应用商店">Proxy SwitchySharp</a>请选择此项并依照下方说明进行配置)</label>
+			  	</p>
+			  	<p class="redFont">注：为保证去广告功能的正常发挥，使用科学上网模式时，请在代理扩展(如：Proxy SwitchySharp)中加入如下规则：</p>
+			  	<p>1、需代理的地址正则表达式：<input type="text" size="80" value="^.*?://.*?(youku|qiyi|iqiyi|letv|sohu|ku6|ku6cdn|pps).(com|tv)/crossdomain.xml$" readonly /> <span class="redFont">( <-- 此项有改动 V1.2.06 -- )</span></p>
+			  	<p>2、该地址指向的代理服务器：<input type="text" size="80" value="api.youku.com 80" readonly /></p>
+			  	<p><img class="bdr1" src="images/proxySet_01.png" /></p>
+			  	<p><img class="bdr1" src="images/proxySet_02.png" /></p>
+			  	<p><img class="bdr1" src="images/proxySet_03.png" /></p>
+			  </div>
+			  <h3>播放器加载模式：</h3>
+			  <div>
+			  	<p>
+			  		<h3>播放器加载模式：</h3>
+			  		<label><input type="radio" name="playerLocationMode" class="playerLocationMode" value="offline" />使用离线播放器</label><br />
+			  		<label><input type="radio" name="playerLocationMode" class="playerLocationMode" value="online" />使用在线播放器(适合于没有内置PPAPI类型flash的浏览器)</label>
+			  	</p>
+			  	<p>服务器在国外，因此在线模式的载入速度会很慢，如无特殊情况，请使用离线播放器。</p>
+			  </div>
+			  <h3>扩展更新日志通知模式：</h3>
+			  <div>
+			  	<p>
+			  		<h3>扩展更新日志通知模式： </h3>
+			  		<label><input type="radio" name="noticeMode" class="noticeMode" value="popup" />每次更新时通过更新日志告诉我关于扩展的变化。</label><br />
+			  		<label><input type="radio" name="noticeMode" class="noticeMode" value="silent" />永远不要提醒我关于扩展的任何改变。</label>
+			  	</p>
+			  </div>
+			</div>
+	  </div>
+	  <div id="tabs-1">
+			<p><img src="../images/icon128.png" /></p>
+			<p><button class="feedback">问题反馈</button> <button class="clearCache">清空缓存</button></p>
+			<p><div id="msgBox"></div></p>
+	  	<p><hr /></p>
+			<p>本扩展是一款由<a target="_pullywood" href="http://www.pullywood.com/">睡虫子</a>开发的旨在屏蔽国内主流视频网站视频播放前烦人广告的chrome扩展。</p>
+			<p>本扩展的实现原理类似于之前由 <a target="_opengg" href="http://opengg.me/">鲁夫的爱</a> 博主所开发的广告屏蔽扩展OpenGG.Clean.Player，两者都是通过修改视频网站的播放器以达到屏蔽的目的。但两者又有一些区别，主要区别在于：</p>
+			<p>
+				<ul>
+					<li>把修改过的播放器置于扩展内部，而不依赖于反向代理服务器，从而使播放器在任何时侯都能够快速载入，规避了反向代理服务器超负荷或被攻击致下线而导致扩展功能失效的问题；</li>
+					<li>利用WEB服务器对代理请求的兼容性，把向视频请求授权的crossdomain.xml请求通过chrome开发接口中代理功能导向任意一开放权限的网站来实现资源请求授权，从而绕过了视频网站对资源请求的限制；</li>
+				</ul>
+			</p>
+	  </div>
+	</div>
+</body>
+</html>

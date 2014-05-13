@@ -1,0 +1,81 @@
+@font-face {
+	font-family: "Segoe UI Symbol";
+	src: url('./seguisym.ttf'),
+}
+* {
+	font-family: "Segoe UI Symbol", "ËÎÌו", "Arial", "sans-serif";
+	font-size: 14px;
+}
+
+body {
+	overflow-y: scroll;
+}
+
+h1, h1 * {
+	font-size:24px;
+	vertical-align:middle;
+}
+
+img {
+	border:0px dotted #000;
+	text-decoration:none;
+}
+.redFont{
+	color:#ff0000;
+	font-weight:bold;
+}
+.greenFont{
+	color:#008000;
+	font-weight:bold;
+}
+.console{
+	padding:10px;
+	background-color:#000000;
+	color:#00ff00
+}
+.bdr1{
+	border:1px solid #003366;
+}
+.donate{
+	width:256px;
+}
+#donateDiv{
+	overflow:hidden;
+	margin-bottom:100px;
+	border:1px dotted #666666;
+}
+#donateLink{
+	width:400px;
+	min-height:100px;
+	float:left;
+	overflow:hidden;
+	display:inline-block;
+	text-align:center;
+}
+#donateLink p {
+	display:none;
+}
+#donorList{
+	float:left;
+	display:inline-block;
+	width:600px;
+	padding:10px;
+}
+.donorTitle{
+	border-bottom:1px dotted black;
+	padding:5px;
+}
+#donorList li a{
+	font-size:14px;
+	font-color:#999999;
+	line-height:1.5em;
+	display:block;
+	text-decoration:none;
+}
+#donorList li a:hover{
+	text-decoration:underline;
+}
+.gray {
+	color:#666666;
+	font-style: italic;
+}
