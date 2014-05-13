@@ -1,0 +1,2 @@
+com.pullywood.chrome.antiADs
+============================
