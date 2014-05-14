@@ -1,6 +1,13 @@
 /**
+ * Copyright © 普利坞(Pullywood.com)
  * Site: http://www.pullywood.com/
  * Coded By 睡虫子(Joey)
+ * 你可以在遵守如下约定的前提下重用本扩展资源文件及脚本代码：
+ * 1、保留本声明；
+ * 2、不以本扩展及代码为基础加入功能无关的损害用户利益的恶意代码，包括但不限于收集个人隐私数据、
+ *    以用户身份进行自动化的社交网络操作、修改或重定向正常功能链接为网络推广链接；
+ * 3、扩展加入广告等相关元素需征得用户同意并提供可关闭选项；
+ * 4、不以我方名义重新发布修改过的扩展；
  * 
  **/
 document.write("<script language=\"javascript\" src=\"scripts/jquery.js\"></script>");
