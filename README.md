@@ -1,3 +1,4 @@
+<a href="https://996.icu"><img src="https://img.shields.io/badge/link-996.icu-red.svg"></a>
 com.pullywood.chrome.antiADs
 ============================
 flashMod为flash修改目录，内附相关操作脚本。<br />
